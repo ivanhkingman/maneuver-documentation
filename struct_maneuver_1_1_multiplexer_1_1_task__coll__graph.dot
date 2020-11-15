@@ -1,0 +1,33 @@
+digraph "Maneuver::Multiplexer::Task"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node2 [label="Maneuver::Multiplexer\l::Task",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="DUNE::Maneuvers::Maneuver",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_maneuvers" ,fontname="Helvetica"];
+  Node4 [label="Maneuver::Multiplexer\l::AbstractMux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_maneuver_1_1_multiplexer_1_1_abstract_mux.html",tooltip="Abstract Multiplexed maneuver. "];
+  Node5 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_args" ,fontname="Helvetica"];
+  Node5 [label="Maneuver::Multiplexer\l::Arguments",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_arguments.html"];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" scheduled" ,fontname="Helvetica"];
+  Node6 [label="Maneuver::Multiplexer\l::ScheduledArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_scheduled_args.html"];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dislodge" ,fontname="Helvetica"];
+  Node7 [label="Maneuver::Multiplexer\l::DislodgeArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_dislodge_args.html"];
+  Node8 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" drop" ,fontname="Helvetica"];
+  Node8 [label="Maneuver::Multiplexer\l::DropArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_drop_args.html",tooltip="Variables. "];
+  Node9 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sample" ,fontname="Helvetica"];
+  Node9 [label="Maneuver::Multiplexer\l::SampleArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_sample_args.html",tooltip="Variables. "];
+  Node10 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" loiter" ,fontname="Helvetica"];
+  Node10 [label="Maneuver::Multiplexer\l::LoiterArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_loiter_args.html"];
+  Node11 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" yoyo" ,fontname="Helvetica"];
+  Node11 [label="Maneuver::Multiplexer\l::YoYoArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_yo_yo_args.html"];
+  Node12 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" skext" ,fontname="Helvetica"];
+  Node12 [label="Maneuver::Multiplexer\l::StationKeepingExtendedArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_station_keeping_extended_args.html"];
+  Node13 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" popup" ,fontname="Helvetica"];
+  Node13 [label="Maneuver::Multiplexer\l::PopUpArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_pop_up_args.html",tooltip="Arguments. "];
+  Node14 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elevator" ,fontname="Helvetica"];
+  Node14 [label="Maneuver::Multiplexer\l::ElevatorArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_elevator_args.html",tooltip="Arguments. "];
+  Node15 -> Node5 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sk" ,fontname="Helvetica"];
+  Node15 [label="Maneuver::Multiplexer\l::StationKeepingArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_station_keeping_args.html"];
+}

@@ -1,0 +1,12 @@
+digraph "Maneuver::Multiplexer::YoYo"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node3 [label="Maneuver::Multiplexer\l::YoYo",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Maneuver::Multiplexer\l::MuxedManeuver\< IMC\l::YoYo, YoYoArgs \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_maneuver_1_1_multiplexer_1_1_muxed_maneuver.html"];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Maneuver::Multiplexer\l::AbstractMux",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_maneuver_1_1_multiplexer_1_1_abstract_mux.html",tooltip="Abstract Multiplexed maneuver. "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_args" ,fontname="Helvetica"];
+  Node6 [label="Maneuver::Multiplexer\l::YoYoArgs",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$struct_maneuver_1_1_multiplexer_1_1_yo_yo_args.html"];
+}
